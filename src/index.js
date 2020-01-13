@@ -1,4 +1,13 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-import App from './App';
-ReactDom.render(<App />, document.getElementById("root"));
+import {
+      AppRegistry,     Platform
+  } from 'react-native';
+  import App from './App';
+  import {name as appName} from './app.json';
+
+  AppRegistry.registerComponent(appName, () => App);
+
+  if (Platform.OS === 'web') {
+      AppRegistry.runApplication(appName, {
+          rootTag: document.getElementById('root'),
+      });
+ }

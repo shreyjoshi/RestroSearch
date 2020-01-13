@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import SearchScreen from './src/screens/SearchScreen';
-import ResultsShowScreen from './src/screens/ResultsShowScreen';
+import SearchScreen from './screens/SearchScreen';
+import ResultsShowScreen from './screens/ResultsShowScreen';
 
 class HomeScreen extends React.Component {
   render() {
